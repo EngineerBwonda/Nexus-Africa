@@ -330,8 +330,8 @@
 }
 
 .offcanvasLogoImg {
-  width: 120px !important;
-  height: 120px !important;
+  width: 180px !important;
+  height: 150px !important;
   object-fit: contain;
 }
 
@@ -464,7 +464,7 @@
   }
 
   .logoImg {
-    width: 62px !important;
+    width: 42px !important;
     height: 78px !important;
   }
 
