@@ -1,0 +1,258 @@
+/* process.module.css */
+
+.processSection {
+  padding: 7rem 0 6rem;
+  background: #f4f7ff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- DECORATIVE BLOBS --- */
+.blobTopRight {
+  position: absolute;
+  top: -160px;
+  right: -160px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(26, 63, 166, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.blobBottomLeft {
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(13, 31, 107, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* --- HEADER --- */
+.headerRow {
+  margin-bottom: 2.5rem;
+}
+
+.overline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1a3fa6;
+  margin-bottom: 1.1rem;
+}
+
+.overline::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #1a3fa6;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+  font-weight: 900;
+  color: #0b1a5e;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.subtitle {
+  color: #4b5da8;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* --- DIVIDER --- */
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(26, 63, 166, 0.25) 20%,
+    rgba(26, 63, 166, 0.25) 80%,
+    transparent
+  );
+  margin-bottom: 3.5rem;
+  transform-origin: left center;
+}
+
+/* --- STEP CARDS --- */
+.stepCard {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 1.75rem 2.25rem;
+  border: 1px solid rgba(13, 31, 107, 0.07);
+  box-shadow:
+    0 2px 4px rgba(13, 31, 107, 0.04),
+    0 8px 24px rgba(13, 31, 107, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.stepCard:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 4px 8px rgba(13, 31, 107, 0.06),
+    0 20px 48px rgba(13, 31, 107, 0.13);
+  border-color: rgba(26, 63, 166, 0.18);
+}
+
+/* Bottom accent bar */
+.cardAccent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1a3fa6, #3b64d4);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 0 0 20px 20px;
+}
+
+.stepCard:hover .cardAccent {
+  transform: scaleX(1);
+}
+
+/* --- STEP META (number + connector) --- */
+.stepMeta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.stepNumber {
+  font-family: "Georgia", serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1a3fa6 0%, #0d1f6b 100%);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(13, 31, 107, 0.22);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.stepCard:hover .stepNumber {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* Dashed connector line between badge and next card — desktop only */
+.connector {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .connector {
+    display: block;
+    flex: 1;
+    height: 1px;
+    border-top: 2px dashed rgba(26, 63, 166, 0.18);
+    margin: 0 -0.25rem;
+    position: relative;
+    top: 0;
+  }
+}
+
+/* --- ICON --- */
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(26, 63, 166, 0.06);
+  border: 1px solid rgba(26, 63, 166, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a3fa6;
+  margin-bottom: 1.25rem;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.stepCard:hover .iconWrap {
+  background: rgba(26, 63, 166, 0.12);
+  color: #0d1f6b;
+}
+
+/* --- TEXT --- */
+.stepTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0b1a5e;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.stepDesc {
+  color: #5c6b9b;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+  .processSection {
+    padding: 4.5rem 0;
+  }
+  .headerRow {
+    margin-bottom: 2rem;
+  }
+  .stepCard {
+    padding: 1.75rem 1.5rem;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stepCard,
+  .stepNumber,
+  .iconWrap,
+  .cardAccent {
+    transition: none;
+  }
+  .stepCard:hover {
+    transform: none;
+  }
+}

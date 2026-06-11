@@ -1,0 +1,203 @@
+/* techstack.module.css */
+
+.techSection {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+/* --- HEADER --- */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.overline {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #1a3fa6;
+  background: rgba(26, 63, 166, 0.08);
+  border-radius: 999px;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  font-weight: 900;
+  color: #0d1f6b;
+  margin: 1rem auto 0.75rem;
+  max-width: 760px;
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 680px;
+  color: #4b5da8;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* --- MARQUEE WRAPPER --- */
+.marqueeWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.marqueeRow {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Fade effects on the sides */
+.marqueeRow::before,
+.marqueeRow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeRow::before {
+  left: 0;
+  background: linear-gradient(to right, #f6f8ff 0%, transparent 100%);
+}
+
+.marqueeRow::after {
+  right: 0;
+  background: linear-gradient(to left, #f6f8ff 0%, transparent 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  padding: 1rem 0;
+}
+
+/* --- TECH ITEMS --- */
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(13, 31, 107, 0.06);
+  border: 1px solid rgba(13, 31, 107, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.techItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(13, 31, 107, 0.12);
+  border-color: rgba(26, 63, 166, 0.3);
+}
+
+.techLogo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.techItem:hover .techLogo {
+  transform: scale(1.1);
+}
+
+.logoImage {
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.techItem:hover .logoImage {
+  filter: grayscale(0%);
+}
+
+.techName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5c6b9b;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* --- MOBILE GRID (Shown only on small screens) --- */
+.mobileGrid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.mobileTechItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(13, 31, 107, 0.06);
+  border: 1px solid rgba(13, 31, 107, 0.08);
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 991.98px) {
+  .marqueeWrapper {
+    display: none; /* Hide marquee on tablets and below */
+  }
+
+  .mobileGrid {
+    display: grid; /* Show grid on tablets and below */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .techSection {
+    padding: 3rem 0;
+  }
+
+  .mobileGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .mobileTechItem {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .techLogo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .techName {
+    font-size: 0.75rem;
+  }
+}
+
+/* Pause animation on hover */
+@media (prefers-reduced-motion: no-preference) {
+  .marqueeRow:hover .marqueeTrack {
+    animation-play-state: paused;
+  }
+}

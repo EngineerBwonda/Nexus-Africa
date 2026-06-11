@@ -1,0 +1,142 @@
+/* Nexus Africa service grid theme matching the navbar blue brand */
+.section {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #f6f8ff 0%, #eef2ff 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.overline {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #1a3fa6;
+  background: rgba(26, 63, 166, 0.08);
+  border-radius: 999px;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  font-weight: 900;
+  color: #0d1f6b;
+  margin: 1rem auto 0.75rem;
+  max-width: 760px;
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 680px;
+  color: #4b5da8;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.card {
+  border: none;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(13, 31, 107, 0.08);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 32px 80px rgba(13, 31, 107, 0.14);
+}
+
+.cardBody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+}
+
+.badge {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1.35rem;
+  font-family: "Georgia", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1a3fa6 0%, #0d1f6b 100%);
+  box-shadow: 0 18px 30px rgba(13, 31, 107, 0.16);
+}
+
+.cardTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0d1f6b;
+  margin-bottom: 1rem;
+}
+
+.cardDesc {
+  flex-grow: 1;
+  color: #5c6b9b;
+  line-height: 1.9;
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardLink {
+  align-self: flex-start;
+  font-weight: 700;
+  color: #1a3fa6;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.cardLink:hover {
+  color: #0d1f6b;
+  transform: translateX(4px);
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .cardBody {
+    padding: 1.6rem;
+  }
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: var(--bs-card-border-radius);
+  border-top-right-radius: var(--bs-card-border-radius);
+}
+
+.card {
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}

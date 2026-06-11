@@ -59,7 +59,7 @@ export default function Navbar() {
               <div className={`d-flex flex-column ${styles.brandText}`}>
                 <span className={styles.brandName}>NEXUS AFRICA</span>
                 <em className={styles.brandTagline}>
-                  Transforming through technology
+                  Moving culture, Building influence
                 </em>
               </div>
             </Link>
@@ -157,7 +157,7 @@ export default function Navbar() {
             NEXUS AFRICA
           </span>
           <em className={styles.offcanvasTagline}>
-            Transforming through technology
+            Moving culture, Building influence
           </em>
         </div>
 

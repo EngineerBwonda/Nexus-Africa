@@ -1,0 +1,206 @@
+/* footer.module.css */
+
+.footer {
+  background-color: #080f2e; /* Deep, premium navy blue */
+  color: #94a3b8; /* Soft slate gray for readability */
+  padding-top: 5rem;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+/* Subtle top border to separate from main content */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #1a3fa6 50%,
+    transparent 100%
+  );
+}
+
+/* --- BRAND SECTION --- */
+.brandSection {
+  padding-right: 2rem;
+}
+
+.brandName {
+  font-family: "Georgia", serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.brandDesc {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 320px;
+}
+
+/* Social Icons */
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.socialLinks a:hover {
+  background: #1a3fa6;
+  color: #ffffff;
+  transform: translateY(-3px);
+  border-color: #1a3fa6;
+}
+
+/* --- HEADINGS & LINKS --- */
+.footerHeading {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footerLinks a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footerLinks a:hover {
+  color: #ffffff;
+  transform: translateX(4px); /* Subtle slide right on hover */
+}
+
+/* --- CONTACT INFO --- */
+.contactInfo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactInfo li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #94a3b8;
+}
+
+.contactInfo svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #1a3fa6; /* Brand blue accent for icons */
+}
+
+.contactInfo a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactInfo a:hover {
+  color: #ffffff;
+}
+
+/* --- BOTTOM BAR --- */
+.bottomBar {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.85rem;
+}
+
+.copyright {
+  margin: 0;
+  color: #64748b;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.legalLinks a {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: #ffffff;
+}
+
+.divider {
+  color: #334155;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 3rem;
+  }
+
+  .brandSection {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .bottomBar {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .legalLinks {
+    justify-content: center;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brandDesc {
+    max-width: 100%;
+  }
+
+  .legalLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
+}

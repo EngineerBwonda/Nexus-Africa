@@ -47,3 +47,16 @@ a {
     color-scheme: dark;
   }
 }
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 255, 100, 0.15) !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.08), transparent);
+}
