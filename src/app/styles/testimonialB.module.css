@@ -1,0 +1,175 @@
+/* testimonials.module.css */
+
+.testimonialSection {
+  padding: 6rem 0;
+  background: #f8fafc; /* Light slate background to make white cards pop */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle blueprint grid pattern in background */
+.testimonialSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(13, 31, 107, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 31, 107, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* --- HEADER --- */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.overline {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #1a3fa6;
+  background: rgba(26, 63, 166, 0.08);
+  border-radius: 6px;
+}
+
+.sectionTitle {
+  font-family: "Georgia", serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  color: #0d1f6b;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* --- TESTIMONIAL CARD --- */
+.testimonialCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.5rem 2rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Top accent line that expands on hover */
+.cardAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #f59e0b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(13, 31, 107, 0.08);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.testimonialCard:hover .cardAccent {
+  transform: scaleX(1);
+}
+
+/* Quote Icon */
+.quoteIcon {
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.testimonialCard:hover .quoteIcon {
+  color: #f59e0b;
+}
+
+/* Quote Text */
+.quoteText {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.8;
+  font-style: italic;
+  margin: 0 0 2rem 0;
+  flex-grow: 1; /* Pushes author section to the bottom */
+}
+
+/* Author Section */
+.authorSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #0d1f6b;
+  color: #fbbf24; /* Gold text on blue background */
+  border-radius: 8px; /* Slightly rounded square for industrial feel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0d1f6b;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.authorRole {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0.25rem 0 0 0;
+}
+
+.divider {
+  margin: 0 0.4rem;
+  color: #cbd5e1;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 991.98px) {
+  .testimonialSection {
+    padding: 4rem 0;
+  }
+
+  .testimonialCard {
+    padding: 2rem 1.5rem;
+  }
+}
