@@ -103,7 +103,7 @@ export default function Testimonials() {
 
                 {/* Testimonial Text */}
                 <blockquote className={styles.quoteText}>
-                  "{item.quote}"
+                  &ldquo;{item.quote}&rdquo;
                 </blockquote>
 
                 {/* Author Info */}

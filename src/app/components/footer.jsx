@@ -8,15 +8,15 @@ export default function Footer() {
 
   const quickLinks = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "../pages/about" },
+    { label: "About Us", href: "/pages/about" },
     { label: "Our Process", href: "/#process" },
-    { label: "Contact", href: "../pages/contact" },
+    { label: "Contact", href: "/pages/contact" },
   ];
 
   const services = [
-    { label: "Web Development", href: "../pages/web-dev" },
-    { label: "Mobile Apps", href: "../pages/mobile-apps" },
-    { label: "Digital Marketing", href: "../pages/digital-marketing" },
+    { label: "Web Development", href: "/pages/web-dev" },
+    { label: "Mobile Apps", href: "/pages/mobile-app" },
+    { label: "Digital Marketing", href: "/pages/marketing" },
     // { label: "Maintenance", href: "../pages/maintenance" },
   ];
 
@@ -133,7 +133,7 @@ export default function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>123 Innovation Drive, Tech City, TC 90210</span>
+                <span>123 Innovation Drive, Tech District, Nairobi, Kenya</span>
               </li>
               <li>
                 <svg
@@ -167,7 +167,7 @@ export default function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+254700000000">+254 700 000 000</a>
               </li>
             </ul>
           </div>

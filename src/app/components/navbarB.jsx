@@ -7,15 +7,15 @@ import styles from "../styles/navbarBB.module.css";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "../pages/about" },
+  { label: "About Us", href: "/pages/about" },
   {
     label: "Our Services",
-    href: "/programme",
+    href: "/#services",
     dropdown: [
-      { label: "Web Development", href: "../pages/web-dev" },
-      { label: "Mobile Development", href: "../pages/mobile-app" },
+      { label: "Web Development", href: "/pages/web-dev" },
+      { label: "Mobile Development", href: "/pages/mobile-app" },
 
-      { label: "Digital Marketing", href: "../pages/marketing" },
+      { label: "Digital Marketing", href: "/pages/marketing" },
     ],
   },
   //   {
@@ -28,7 +28,7 @@ const navLinks = [
   //       { label: "Portfolio", href: "/gallery" },
   //     ],
   //   },
-  { label: "Contact", href: "../pages/contact" },
+  { label: "Contact", href: "/pages/contact" },
 ];
 
 const PHONE_NUMBER = "+254 700 000 000";
@@ -154,9 +154,9 @@ export default function Navbar() {
               </a>
 
               <Link
-                href="../pages/contact"
+                href="/pages/contact"
                 className={styles.ctaBtn}
-                onClick={() => setActiveHref("../pages/contact")}
+                onClick={() => setActiveHref("/pages/contact")}
               >
                 Get Started →
               </Link>
@@ -268,10 +268,10 @@ export default function Navbar() {
             <span>📞</span> {PHONE_NUMBER}
           </a>
           <Link
-            href="/join"
+            href="/pages/contact"
             className={styles.offcanvasCtaBtn}
             onClick={() => {
-              setActiveHref("/join");
+              setActiveHref("/pages/contact");
               setOffcanvasOpen(false);
             }}
           >

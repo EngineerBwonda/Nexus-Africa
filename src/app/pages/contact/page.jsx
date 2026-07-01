@@ -68,13 +68,13 @@ export default function ContactPage() {
           >
             <span className={styles.overline}>CONTACT US</span>
             <h1 className={styles.pageTitle}>
-              Let's Build Something{" "}
+              Let&apos;s Build Something{" "}
               <span className={styles.textAccent}>Extraordinary</span>.
             </h1>
             <p className={styles.pageSubtitle}>
-              Have a project in mind? Reach out to our team of experts and let's
-              discuss how we can engineer a solution tailored to your business
-              needs.
+              Have a project in mind? Reach out to our team of experts and
+              let&apos;s discuss how we can engineer a solution tailored to your
+              business needs.
             </p>
           </motion.div>
         </div>
@@ -146,8 +146,8 @@ export default function ContactPage() {
               <div className={styles.formCard}>
                 <h3 className={styles.formTitle}>Send Us a Message</h3>
                 <p className={styles.formSubtitle}>
-                  Fill out the form below and we'll get back to you within 24
-                  hours.
+                  Fill out the form below and we&apos;ll get back to you within
+                  24 hours.
                 </p>
 
                 <form
