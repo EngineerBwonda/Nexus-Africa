@@ -12,10 +12,9 @@ const navLinks = [
     label: "Our Services",
     href: "/programme",
     dropdown: [
-      { label: "Software Development", href: "/programme" },
       { label: "Web Development", href: "../pages/web-dev" },
       { label: "Mobile Development", href: "../pages/mobile-app" },
-      { label: "eCommerce", href: "/community" },
+
       { label: "Digital Marketing", href: "../pages/marketing" },
     ],
   },

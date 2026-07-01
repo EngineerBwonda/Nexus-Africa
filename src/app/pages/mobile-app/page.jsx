@@ -163,24 +163,10 @@ export default function SomePage() {
   const carouselSlides = [
     {
       id: 1,
-      image: "/images/hero1.jpg",
+      image: "/nexus-mobile.jpeg",
       alt: "Cultural event in Africa",
-      title: "Empowering Communities",
-      description: "Transforming lives through culture and innovation.",
-    },
-    {
-      id: 2,
-      image: "/images/hero2.jpg",
-      alt: "Youth program",
-      title: "Youth Leadership",
-      description: "Building the next generation of African leaders.",
-    },
-    {
-      id: 3,
-      image: "/images/hero3.jpg",
-      alt: "Software solutions",
-      title: "Technology for Africa",
-      description: "Innovative software solutions that matter.",
+      title: "",
+      description: "",
     },
   ];
 

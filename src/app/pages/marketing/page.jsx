@@ -118,7 +118,7 @@ export default function DigitalMarketingPage() {
   const carouselSlides = [
     {
       id: 1,
-      image: "/images/hero1.jpg",
+      image: "/nexus-marketing-a.jpeg",
       alt: "Cultural event in Africa",
       title: "Empowering Communities",
       description: "Transforming lives through culture and innovation.",

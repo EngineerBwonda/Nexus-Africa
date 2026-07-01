@@ -117,12 +117,11 @@ export default function WebDevelopmentPage() {
   const slides = [
     {
       id: "one",
-      image: "/images/slide1.jpg",
+      image: "/nexus-webdev-a.jpeg",
       alt: "Slide one",
       label: "Featured",
-      title: "Modern digital solutions",
-      description:
-        "Build scalable products with agile delivery and polished UI.",
+      title: "",
+      description: "",
       ctaText: "Learn more",
       ctaHref: "/services",
     },

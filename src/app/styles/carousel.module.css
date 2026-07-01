@@ -65,7 +65,7 @@
 }
 
 .image {
-  object-fit: cover;
+  object-fit: fill;
   z-index: 1;
 }
 
