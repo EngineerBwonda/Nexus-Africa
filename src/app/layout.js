@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 //import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Navbar from "./components/navbar";
+import NavbarB from "./components/navbarB";
 import Footer from "./components/footer";
 
 const geistSans = Geist({
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <Navbar />
+        <NavbarB />
         {children}
         <Footer />
       </body>

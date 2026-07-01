@@ -10,7 +10,7 @@ const navLinks = [
   { label: "About Us", href: "../pages/about" },
   { label: "Sevices", href: "/programme" },
   { label: "Software Solutions", href: "/gallery" },
-  { label: "News", href: "/join" },
+
   { label: "Contact", href: "../pages/contact" },
 ];
 

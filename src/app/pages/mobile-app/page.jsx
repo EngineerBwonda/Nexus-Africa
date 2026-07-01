@@ -12,6 +12,7 @@ import InfoGrid from "../../components/info-grid";
 import Process from "../../components/process";
 import Testimonials from "../../components/testimonialB";
 import ContactMap from "../../components/contactMap";
+import Carousel from "../../components/carousel";
 
 export default function SomePage() {
   // Data for the first section
@@ -159,8 +160,33 @@ export default function SomePage() {
     },
   ];
 
+  const carouselSlides = [
+    {
+      id: 1,
+      image: "/images/hero1.jpg",
+      alt: "Cultural event in Africa",
+      title: "Empowering Communities",
+      description: "Transforming lives through culture and innovation.",
+    },
+    {
+      id: 2,
+      image: "/images/hero2.jpg",
+      alt: "Youth program",
+      title: "Youth Leadership",
+      description: "Building the next generation of African leaders.",
+    },
+    {
+      id: 3,
+      image: "/images/hero3.jpg",
+      alt: "Software solutions",
+      title: "Technology for Africa",
+      description: "Innovative software solutions that matter.",
+    },
+  ];
+
   return (
     <main>
+      <Carousel slides={carouselSlides} autoPlay={true} interval={5000} />
       {/* Usage 1: With Icons */}
       {/* <InfoGrid
         title="Features of our mobile apps?"
