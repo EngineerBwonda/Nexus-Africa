@@ -8,16 +8,16 @@ export default function Footer() {
 
   const quickLinks = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
+    { label: "About Us", href: "../pages/about" },
     { label: "Our Process", href: "/#process" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "../pages/contact" },
   ];
 
   const services = [
-    { label: "Web Development", href: "/services/web" },
-    { label: "Mobile Apps", href: "/services/mobile" },
-    { label: "Digital Marketing", href: "/services/marketing" },
-    { label: "Maintenance", href: "/services/maintenance" },
+    { label: "Web Development", href: "../pages/web-dev" },
+    { label: "Mobile Apps", href: "../pages/mobile-apps" },
+    { label: "Digital Marketing", href: "../pages/digital-marketing" },
+    // { label: "Maintenance", href: "../pages/maintenance" },
   ];
 
   return (

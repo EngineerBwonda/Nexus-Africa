@@ -29,12 +29,12 @@ const highlights = [
   {
     title: "Innovation-Driven",
     desc: "We don't just follow trends; we set them. Our team leverages cutting-edge technology to build future-proof solutions.",
-    image: "/about-innovation.jpg", // Replace with your image
+    image: "/nexus-about-A.jpeg", // Replace with your image
   },
   {
     title: "Client-Centric Approach",
     desc: "Your goals are our blueprint. We maintain transparent communication and tailor every strategy to your unique business needs.",
-    image: "/about-client.jpg", // Replace with your image
+    image: "/nexus-mobi-b.jpeg", // Replace with your image
   },
 ];
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
                 {/* Button pushed to the bottom left */}
                 <div className="mt-auto pt-4">
-                  <Link href="/contact" className={styles.btnPrimary}>
+                  <Link href="/pages/contact" className={styles.btnPrimary}>
                     Partner With Us <i className="bi bi-arrow-right ms-2"></i>
                   </Link>
                 </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
               >
                 <div className={styles.heroImageWrap}>
                   <Image
-                    src="/about-hero.jpg" // Replace with actual image path
+                    src="/nexus-about.jpeg" // Replace with actual image path
                     alt="Nexus Africa Team"
                     width={800}
                     height={600}
@@ -229,14 +229,14 @@ export default function AboutPage() {
                 Ready to Transform Your Business?
               </h2>
               <p className={styles.ctaDesc}>
-                Let's discuss how our industrial-grade digital solutions can
+                Lets discuss how our industrial-grade digital solutions can
                 drive your next phase of growth.
               </p>
               <div className={styles.ctaButtons}>
-                <Link href="/contact" className={styles.btnPrimary}>
+                <Link href="/pages/contact" className={styles.btnPrimary}>
                   Start a Project
                 </Link>
-                <Link href="/services" className={styles.btnSecondary}>
+                <Link href="/pages/services" className={styles.btnSecondary}>
                   View Our Services
                 </Link>
               </div>

@@ -35,7 +35,7 @@ export default function Hero() {
               </p>
 
               <div className={styles.heroCta}>
-                <Link href="/contact" className={styles.btnPrimary}>
+                <Link href="/pages/contact" className={styles.btnPrimary}>
                   <i className="bi bi-rocket-takeoff me-2"></i>
                   Start Your Project
                 </Link>

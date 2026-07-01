@@ -111,9 +111,9 @@ export default function NexusAfricaServices() {
                 <div className={`card-body ${styles.cardBody}`}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
                   <p className={styles.cardDesc}>{service.desc}</p>
-                  <a href="#" className={styles.cardLink}>
+                  {/* <a href="#" className={styles.cardLink}>
                     Learn More →
-                  </a>
+                  </a> */}
                 </div>
               </motion.article>
             ))}
@@ -172,9 +172,9 @@ export default function NexusAfricaServices() {
                 <div className={`card-body ${styles.cardBody}`}>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
                   <p className={styles.cardDesc}>{service.desc}</p>
-                  <a href="#" className={styles.cardLink}>
+                  {/* <a href="#" className={styles.cardLink}>
                     Learn More →
-                  </a>
+                  </a> */}
                 </div>
               </motion.article>
             ))}

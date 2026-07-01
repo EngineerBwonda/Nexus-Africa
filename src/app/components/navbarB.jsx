@@ -154,9 +154,9 @@ export default function Navbar() {
               </a>
 
               <Link
-                href="/join"
+                href="../pages/contact"
                 className={styles.ctaBtn}
-                onClick={() => setActiveHref("/join")}
+                onClick={() => setActiveHref("../pages/contact")}
               >
                 Get Started →
               </Link>

@@ -29,7 +29,7 @@ const services = [
     title: "Web Design & Development",
     description:
       "We build modern, responsive websites that prioritize usability, speed, and brand clarity for growth-minded businesses.",
-    imageSrc: "/webpic.png",
+    imageSrc: "/nexus-web-design.jpeg",
     imageAlt: "Web design workspace",
     href: "/services/web-design",
   },
@@ -37,7 +37,7 @@ const services = [
     title: "Mobile App Development",
     description:
       "We deliver polished cross-platform mobile apps with intuitive UX, strong performance, and seamless integration.",
-    imageSrc: "/webpic.png",
+    imageSrc: "/nexus-mobile-app.jpg",
     imageAlt: "Mobile app on a phone",
     href: "/services/mobile-apps",
   },
@@ -45,7 +45,7 @@ const services = [
     title: "Website Maintenance",
     description:
       "We keep your digital presence secure and up to date with monitoring, backups, performance tuning, and content updates.",
-    imageSrc: "/webpic.png",
+    imageSrc: "/nexus-web-devA.jpeg",
     imageAlt: "Server room and data cables",
     href: "/services/maintenance",
   },
@@ -53,7 +53,7 @@ const services = [
     title: "Digital Marketing",
     description:
       "From SEO to social campaigns, we create measurable marketing strategies that grow visibility and convert leads.",
-    imageSrc: "/webpic.png",
+    imageSrc: "/nexus-digital-mark.jpeg",
     imageAlt: "Marketing analytics on a laptop",
     href: "/services/marketing",
   },
